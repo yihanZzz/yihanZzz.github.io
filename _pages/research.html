@@ -1,28 +1,47 @@
 ---
 layout: archive
 title: "Research"
-permalink: /publications/
+permalink: /research/
 author_profile: true
 ---
 
-## Publications  ( [ORCID]({{ site.author.orcid }}) , [Google Scholar]({{ site.author.googlescholar }}) )
+<!-- Heading + external profiles -->
+## Preprints
+{% if site.links.preprints_note %}
+<p>{{ site.links.preprints_note | markdownify }}</p>
+{% endif %}
 
 {% assign pubs = site.publications | sort: "date" | reverse %}
 
-{% for category in site.publication_category %}
-  <h2>{{ category[1].title }}</h2>
-  <ul>
-  {% for p in pubs %}
-    {% if p.category == category[0] %}
-      <li style="margin-bottom:1rem;">
-        {{ p.authors }} ({{ p.date | date: "%Y" }}).
-        <a href="{{ p.url | relative_url }}"><strong>{{ p.title }}</strong></a>.<br/>
-        <em>{{ p.venue }}</em>.
-      </li>
-    {% endif %}
-  {% endfor %}
-  </ul>
+<ul class="pub-list">
+{% for p in pubs %}
+  {% if p.category == "Preprints" %}
+    <li>
+      {{ p.authors }} ({{ p.date | date: "%Y" }}).
+      <a href="{{ p.url | relative_url }}"><strong>{{ p.title }}</strong></a>.<br/>
+      <em>{{ p.venue }}</em>.
+      {% if p.journal_url %}[<a href="{{ p.journal_url }}">Journal Link</a>]{% endif %}
+      {% if p.code_url %} [<a href="{{ p.code_url }}">Code</a>]{% endif %}
+      {% if p.excerpt %} <span class="pub-note">— {{ p.excerpt | strip }}</span>{% endif %}
+    </li>
+  {% endif %}
 {% endfor %}
+</ul>
 
+## Publications  ( [ORCID]({{ site.author.orcid }}) , [Google Scholar]({{ site.author.googlescholar }}) )
+
+<ul class="pub-list">
+{% for p in pubs %}
+  {% if p.category == "Journal articles" %}
+    <li>
+      {{ p.authors }} ({{ p.date | date: "%Y" }}).
+      <a href="{{ p.url | relative_url }}"><strong>{{ p.title }}</strong></a>.<br/>
+      <em>{{ p.venue }}</em>.
+      {% if p.journal_url %}[<a href="{{ p.journal_url }}">Journal Link</a>]{% endif %}
+      {% if p.code_url %} [<a href="{{ p.code_url }}">Code</a>]{% endif %}
+    </li>
+  {% endif %}
+{% endfor %}
+</ul>
 
 
