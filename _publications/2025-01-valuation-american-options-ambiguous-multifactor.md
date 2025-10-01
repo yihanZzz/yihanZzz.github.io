@@ -1,0 +1,9 @@
+---
+title: "Valuation of American options in ambiguous multifactor models"
+authors: "Ankush Agarwal, Christian Oliver Ewald, and Yihan Zou"
+venue: "[SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3549891)"
+date: 2025-03
+collection: publications
+category: Preprints
+excerpt: "Revise and Resubmit in *Quantitative Finance*"
+---
