@@ -5,7 +5,7 @@ permalink: /publications/
 author_profile: true
 ---
 
-**Preprints**
+<p class="pub-section"><strong>Preprints</strong></p>
 
 {% assign pubs = site.publications | sort: "date" | reverse %}
 <ul class="pub-list">
@@ -14,20 +14,22 @@ author_profile: true
     <li>
       {{ p.authors }} ({{ p.date | date: "%Y" }}).
       {{ p.title }}.<br/>
+      <span class="pub-venue">
       {% if p.venue_url and p.venue_url != "" %}
         <em><strong><a href="{{ p.venue_url }}">{{ p.venue }}</a></strong></em>
       {% else %}
         <em><strong>{{ p.venue }}</strong></em>
       {% endif %}
+      </span>
       {% if p.excerpt %}
-        <br/><span class="pub-note">{{ p.excerpt | markdownify | strip_newlines }}</span>
+        <br/><span class="pub-note">{{ p.excerpt | markdownify | strip_newlines | replace: '<p>','' | replace: '</p>','' }}</span>
       {% endif %}
     </li>
   {% endif %}
 {% endfor %}
 </ul>
 
-**Publications**
+<p class="pub-section"><strong>Publications</strong></p>
 
 <ul class="pub-list">
 {% for p in pubs %}
@@ -35,11 +37,13 @@ author_profile: true
     <li>
       {{ p.authors }} ({{ p.date | date: "%Y" }}).
       {{ p.title }}.<br/>
+      <span class="pub-venue">
       {% if p.venue_url and p.venue_url != "" %}
         <em><strong><a href="{{ p.venue_url }}">{{ p.venue }}</a></strong></em>
       {% else %}
         <em><strong>{{ p.venue }}</strong></em>
       {% endif %}
+      </span>
     </li>
   {% endif %}
 {% endfor %}
