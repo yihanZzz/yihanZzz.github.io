@@ -22,7 +22,7 @@ author_profile: true
       {% endif %}
       </span>
       {% if p.excerpt %}
-        <br/><span class="pub-note">{{ p.excerpt | markdownify | strip_newlines | replace: '<p>','' | replace: '</p>','' }}</span>
+        <br/><span class="pub-note"><strong><em>{{ p.excerpt | markdownify | strip_newlines | replace: '<p>','' | replace: '</p>','' }}</em></strong></span>
       {% endif %}
     </li>
   {% endif %}
