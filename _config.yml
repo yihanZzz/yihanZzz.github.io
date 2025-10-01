@@ -23,7 +23,7 @@ repository               : "yihanZzz.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "staffpage.png"
   name             : "Yihan Zou"
   pronouns         : # example: "she/her"  
   bio              : "Lecturer in Financial Economics at University of Glasgow"
