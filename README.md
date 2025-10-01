@@ -1,1 +1,1 @@
-# Academic Pages for Yihan Zou
+# Academic Page for Yihan Zou
