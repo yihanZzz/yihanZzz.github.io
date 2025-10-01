@@ -13,13 +13,15 @@ author_profile: true
   {% if p.category == "Preprints" %}
     <li>
       {{ p.authors }} ({{ p.date | date: "%Y" }}).
-      <a href="{{ p.url | relative_url }}"><strong>{{ p.title }}</strong></a>.<br/>
+      {{ p.title }}.<br/>
       {% if p.venue_url %}
         <em><a href="{{ p.venue_url }}">{{ p.venue }}</a></em>.
       {% else %}
         <em>{{ p.venue }}</em>.
       {% endif %}
-      {% if p.excerpt %} <span class="pub-note">— {{ p.excerpt | markdownify | strip_newlines }}</span>{% endif %}
+      {% if p.excerpt %} 
+        <span class="pub-note">— {{ p.excerpt | markdownify | strip_newlines }}</span>
+      {% endif %}
     </li>
   {% endif %}
 {% endfor %}
@@ -32,7 +34,7 @@ author_profile: true
   {% if p.category == "Journal articles" %}
     <li>
       {{ p.authors }} ({{ p.date | date: "%Y" }}).
-      <a href="{{ p.url | relative_url }}"><strong>{{ p.title }}</strong></a>.<br/>
+      {{ p.title }}.<br/>
       {% if p.venue_url %}
         <em><a href="{{ p.venue_url }}">{{ p.venue }}</a></em>.
       {% else %}
