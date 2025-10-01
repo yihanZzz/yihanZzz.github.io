@@ -26,7 +26,7 @@ author:
   avatar           : "staffpage.png"
   name             : "Yihan Zou"
   pronouns         : # example: "she/her"  
-  bio              : "Lecturer in Financial Economics at University of Glasgow"
+  bio              : #"Lecturer in Financial Economics at University of Glasgow"
   location         : "Glasgow, UK"
   employer         : "University of Glasgow"
   uri              : # URL
