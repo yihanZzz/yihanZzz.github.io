@@ -16,7 +16,7 @@ Short summary:
 - 2021 - 2023: Lecturer at the School of Finance, Southwestern University of Finance and Economics, China.
 - 2016 - 2020: Ph.D. in Quantitative Finance, University of Glasgow, UK.
 - 2014 - 2015: M.Sc. in Financial Risk Management, University of Glasgow, UK.
-- 2010 - 2014: B.Sc. in Financial Management, Central South University, UK.
+- 2010 - 2014: B.Sc. in Financial Management, Central South University, China.
 
 Email:
 ------
