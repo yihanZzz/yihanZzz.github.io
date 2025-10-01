@@ -4,4 +4,5 @@ authors: "Christian Ewald and Yihan Zou"
 venue: "[European Journal of Operational Research]([https://www.sciencedirect.com/journal/european-journal-of-operational-research](https://www.sciencedirect.com/science/article/pii/S0377221721000825))"
 date: 2021-02
 collection: publications
+category: Journal articles
 ---
