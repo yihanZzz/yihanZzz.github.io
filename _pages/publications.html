@@ -1,28 +1,25 @@
 ---
 #layout: archive
-title: "Publications"
+title: "Research"
 permalink: /publications/
 author_profile: true
 ---
 
-<!-- Heading + external profiles -->
 ## Preprints
-{% if site.links.preprints_note %}
-<p>{{ site.links.preprints_note | markdownify }}</p>
-{% endif %}
 
 {% assign pubs = site.publications | sort: "date" | reverse %}
-
 <ul class="pub-list">
 {% for p in pubs %}
   {% if p.category == "Preprints" %}
     <li>
       {{ p.authors }} ({{ p.date | date: "%Y" }}).
       <a href="{{ p.url | relative_url }}"><strong>{{ p.title }}</strong></a>.<br/>
-      <em>{{ p.venue }}</em>.
-      {% if p.journal_url %}[<a href="{{ p.journal_url }}">Journal Link</a>]{% endif %}
-      {% if p.code_url %} [<a href="{{ p.code_url }}">Code</a>]{% endif %}
-      {% if p.excerpt %} <span class="pub-note">— {{ p.excerpt | strip }}</span>{% endif %}
+      {% if p.venue_url %}
+        <em><a href="{{ p.venue_url }}">{{ p.venue }}</a></em>.
+      {% else %}
+        <em>{{ p.venue }}</em>.
+      {% endif %}
+      {% if p.excerpt %} <span class="pub-note">— {{ p.excerpt | markdownify | strip_newlines }}</span>{% endif %}
     </li>
   {% endif %}
 {% endfor %}
@@ -36,12 +33,12 @@ author_profile: true
     <li>
       {{ p.authors }} ({{ p.date | date: "%Y" }}).
       <a href="{{ p.url | relative_url }}"><strong>{{ p.title }}</strong></a>.<br/>
-      <em>{{ p.venue }}</em>.
-      {% if p.journal_url %}[<a href="{{ p.journal_url }}">Journal Link</a>]{% endif %}
-      {% if p.code_url %} [<a href="{{ p.code_url }}">Code</a>]{% endif %}
+      {% if p.venue_url %}
+        <em><a href="{{ p.venue_url }}">{{ p.venue }}</a></em>.
+      {% else %}
+        <em>{{ p.venue }}</em>.
+      {% endif %}
     </li>
   {% endif %}
 {% endfor %}
 </ul>
-
-
