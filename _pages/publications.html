@@ -5,7 +5,7 @@ permalink: /publications/
 author_profile: true
 ---
 
-## Preprints
+**Preprints**
 
 {% assign pubs = site.publications | sort: "date" | reverse %}
 <ul class="pub-list">
@@ -14,20 +14,20 @@ author_profile: true
     <li>
       {{ p.authors }} ({{ p.date | date: "%Y" }}).
       {{ p.title }}.<br/>
-      {% if p.venue_url %}
-        <em><a href="{{ p.venue_url }}">{{ p.venue }}</a></em>.
+      {% if p.venue_url and p.venue_url != "" %}
+        <em><strong><a href="{{ p.venue_url }}">{{ p.venue }}</a></strong></em>
       {% else %}
-        <em>{{ p.venue }}</em>.
+        <em><strong>{{ p.venue }}</strong></em>
       {% endif %}
-      {% if p.excerpt %} 
-        <span class="pub-note">— {{ p.excerpt | markdownify | strip_newlines }}</span>
+      {% if p.excerpt %}
+        <br/><span class="pub-note">{{ p.excerpt | markdownify | strip_newlines }}</span>
       {% endif %}
     </li>
   {% endif %}
 {% endfor %}
 </ul>
 
-## Publications  ( [ORCID]({{ site.author.orcid }}) , [Google Scholar]({{ site.author.googlescholar }}) )
+**Publications**
 
 <ul class="pub-list">
 {% for p in pubs %}
@@ -35,10 +35,10 @@ author_profile: true
     <li>
       {{ p.authors }} ({{ p.date | date: "%Y" }}).
       {{ p.title }}.<br/>
-      {% if p.venue_url %}
-        <em><a href="{{ p.venue_url }}">{{ p.venue }}</a></em>.
+      {% if p.venue_url and p.venue_url != "" %}
+        <em><strong><a href="{{ p.venue_url }}">{{ p.venue }}</a></strong></em>
       {% else %}
-        <em>{{ p.venue }}</em>.
+        <em><strong>{{ p.venue }}</strong></em>
       {% endif %}
     </li>
   {% endif %}
