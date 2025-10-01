@@ -1,6 +1,6 @@
 ---
 title: "Robust valuation and optimal harvesting of forestry investments under catastrophe risk and parameter uncertainty"
-authors: "Ankush Agarwal, Christian Oliver Ewald, and Yihan Zou"
+authors: "Ankush Agarwal, Christian Ewald, and Yihan Zou"
 venue: "[arXiv](https://arxiv.org/abs/2502.05340)"
 date: 2025-02
 collection: publications
