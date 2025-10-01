@@ -14,7 +14,7 @@ My current research interests lie in:
 - 
 
 Short summary:
-======
+------
 - 2023 -  now: Lecturer in Financial Economics at the Adam Smith Business School, University of Glasgow, UK.
 - 2021 - 2023: Lecturer at the School of Finance, Southwestern University of Finance and Economics, China.
 - 2016 - 2020: Ph.D. in Quantitative Finance, University of Glasgow, UK.
