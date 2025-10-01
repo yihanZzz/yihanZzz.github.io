@@ -9,9 +9,6 @@ redirect_from:
 
 I am a Lecturer in Financial Economics at the [Adam Smith Business School, University of Glasgow](https://www.gla.ac.uk/schools/business/), where I research and teach in financial economics, risk management, and quantitative finance.
 
-My current research interests lie in:
-
-- 
 
 Short summary:
 ------
