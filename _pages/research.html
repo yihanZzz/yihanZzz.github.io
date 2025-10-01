@@ -11,18 +11,20 @@ author_profile: true
 <ul class="pub-list">
 {% for p in pubs %}
   {% if p.category == "Preprints" %}
+    {% assign ex = p.excerpt | default: "" | strip %}
     <li>
       {{ p.authors }} ({{ p.date | date: "%Y" }}).
       {{ p.title }}.<br/>
       <span class="pub-venue">
-      {% if p.venue_url and p.venue_url != "" %}
-        <em><strong><a href="{{ p.venue_url }}">{{ p.venue }}</a></strong></em>
-      {% else %}
-        <em><strong>{{ p.venue }}</strong></em>
-      {% endif %}
+        {% assign vurl = p.venue_url | default: "" | strip %}
+        {% if vurl != "" %}
+          <em><strong><a href="{{ vurl }}">{{ p.venue }}</a></strong></em>
+        {% else %}
+          <em><strong>{{ p.venue }}</strong></em>
+        {% endif %}
       </span>
-      {% if p.excerpt %}
-        , <span class="pub-note"><em><strong>{{ p.excerpt | markdownify | strip_newlines | replace: '<p>','' | replace: '</p>','' }}</strong></em></span>
+      {% if ex != "" %}
+        , <span class="pub-note"><em><strong>{{ ex | markdownify | strip_newlines | replace: '<p>','' | replace: '</p>','' }}</strong></em></span>
       {% endif %}
     </li>
   {% endif %}
