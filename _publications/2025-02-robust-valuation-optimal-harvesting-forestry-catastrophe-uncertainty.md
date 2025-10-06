@@ -5,6 +5,6 @@ venue: "arXiv"
 venue_url: "https://arxiv.org/abs/2502.05340"
 date: 2025-02-01
 collection: publications
-category: Publications
+category: Journal articles
 excerpt: "Accepted in *European Journal of Operational Research*"
 ---
