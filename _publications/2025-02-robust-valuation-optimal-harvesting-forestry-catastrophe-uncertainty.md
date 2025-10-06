@@ -5,6 +5,6 @@ venue: "arXiv"
 venue_url: "https://arxiv.org/abs/2502.05340"
 date: 2025-02-01
 collection: publications
-category: Preprints
-excerpt: "Revise and Resubmit in *European Journal of Operational Research*"
+category: Publications
+excerpt: "Accepted in *European Journal of Operational Research*"
 ---
