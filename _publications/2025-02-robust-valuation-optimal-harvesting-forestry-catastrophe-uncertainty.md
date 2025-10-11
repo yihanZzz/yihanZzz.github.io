@@ -6,5 +6,5 @@ venue_url: "https://doi.org/10.1016/j.ejor.2025.10.007"
 date: 2025-10-06
 collection: publications
 category: Journal articles
-excerpt: "In Press, Journal Pre-proof"
+excerpt: "In Press"
 ---
