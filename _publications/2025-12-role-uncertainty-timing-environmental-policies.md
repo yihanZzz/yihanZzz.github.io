@@ -1,9 +1,0 @@
----
-title: "On the Role of Uncertainty in Timing Environmental Policies"
-authors: "Christian Ewald, Tiancheng Pei, and Yihan Zou"
-venue: "SSRN"
-venue_url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5941614"
-date: 2025-12-19
-collection: publications
-category: Preprints
----
