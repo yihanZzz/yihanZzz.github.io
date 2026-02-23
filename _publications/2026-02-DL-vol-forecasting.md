@@ -6,4 +6,5 @@ venue_url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6287198"
 date: 2026-02-20
 collection: publications
 category: Preprints
+excerpt: "Submitted"
 ---
