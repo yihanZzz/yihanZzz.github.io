@@ -1,9 +1,9 @@
 ---
 title: "Deep Learning for Reflected BSDEs: Regularization and Convergence Analysis"
 authors: "Ruimeng Hu, and Yihan Zou"
-venue: "Preprint available soon"
-#venue_url: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6229738"
-date: 2026-02-21
+venue: "HAL"
+venue_url: "https://hal.science/hal-05689908"
+date: 2026-07-11
 collection: publications
 category: Preprints
 ---
